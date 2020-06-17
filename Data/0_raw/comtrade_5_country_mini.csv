@@ -1,0 +1,97 @@
+Classification,Year,Period,Period Desc.,Aggregate Level,Is Leaf Code,Trade Flow Code,Trade Flow,Reporter Code,Reporter,Reporter ISO,Partner Code,Partner,Partner ISO,2nd Partner Code,2nd Partner,2nd Partner ISO,Customs Proc. Code,Customs,Mode of Transport Code,Mode of Transport,Commodity Code,Commodity,Qty Unit Code,Qty Unit,Qty,Alt Qty Unit Code,Alt Qty Unit,Alt Qty,Netweight (kg),Gross weight (kg),Trade Value (US$),CIF Trade Value (US$),FOB Trade Value (US$),Flag
+H5,2018,2018,2018,0,0,1,Import,156,China,CHN,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,146381811975,,,4
+H5,2018,2018,2018,0,0,4,Re-Import,156,China,CHN,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,146381811975,,,4
+H5,2018,2018,2018,0,0,1,Import,156,China,CHN,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,106257241330,,,4
+H5,2018,2018,2018,0,0,2,Export,156,China,CHN,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,77908711119,,,4
+H5,2018,2018,2018,0,0,1,Import,156,China,CHN,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,180401786146,,,4
+H5,2018,2018,2018,0,0,2,Export,156,China,CHN,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,147235099286,,,4
+H5,2018,2018,2018,0,0,1,Import,156,China,CHN,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,23893335363,,,4
+H5,2018,2018,2018,0,0,2,Export,156,China,CHN,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,56987895809,,,4
+H5,2018,2018,2018,0,0,1,Import,156,China,CHN,842,USA,USA,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,156004352076,,,4
+H5,2018,2018,2018,0,0,2,Export,156,China,CHN,842,USA,USA,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,479701580548,,,4
+H5,2018,2018,2018,0,0,1,Import,276,Germany,DEU,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,126750945327,,,4
+H5,2018,2018,2018,0,0,2,Export,276,Germany,DEU,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,110452930389,,,4
+H5,2018,2018,2018,0,0,1,Import,276,Germany,DEU,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,29282349293,,,4
+H5,2018,2018,2018,0,0,2,Export,276,Germany,DEU,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,24239532472,,,4
+H5,2018,2018,2018,0,0,1,Import,276,Germany,DEU,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,43525907894,,,4
+H5,2018,2018,2018,0,0,2,Export,276,Germany,DEU,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,96659170689,,,4
+H5,2018,2018,2018,0,0,1,Import,276,Germany,DEU,842,USA,USA,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,78295030921,,,4
+H5,2018,2018,2018,0,0,2,Export,276,Germany,DEU,842,USA,USA,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,134363438748,,,4
+H5,2018,2018,2018,0,0,1,Import,392,Japan,JPN,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,173611807472,,,4
+H5,2018,2018,2018,0,0,2,Export,392,Japan,JPN,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,144053344744,,,4
+H5,2018,2018,2018,0,0,1,Import,392,Japan,JPN,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,25958985354,,,4
+H5,2018,2018,2018,0,0,2,Export,392,Japan,JPN,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,20891820703,,,4
+H5,2018,2018,2018,0,0,1,Import,392,Japan,JPN,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,8226912801,,,4
+H5,2018,2018,2018,0,0,2,Export,392,Japan,JPN,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,13900852170,,,4
+H5,2018,2018,2018,0,0,1,Import,392,Japan,JPN,842,USA,USA,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,83570878690,,,4
+H5,2018,2018,2018,0,0,2,Export,392,Japan,JPN,842,USA,USA,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,140663642062,,,4
+H5,2018,2018,2018,0,0,1,Import,826,United Kingdom,GBR,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,63391696591,,,4
+H5,2018,2018,2018,0,0,2,Export,826,United Kingdom,GBR,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,27701867661,,,4
+H5,2018,2018,2018,0,0,1,Import,826,United Kingdom,GBR,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,92101403912,,,4
+H5,2018,2018,2018,0,0,2,Export,826,United Kingdom,GBR,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,47510719903,,,4
+H5,2018,2018,2018,0,0,1,Import,826,United Kingdom,GBR,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,12917862825,,,4
+H5,2018,2018,2018,0,0,2,Export,826,United Kingdom,GBR,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,8380559919,,,4
+H5,2018,2018,2018,0,0,1,Import,826,United Kingdom,GBR,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,5055648184,,,4
+H5,2018,2018,2018,0,0,4,Re-Import,826,United Kingdom,GBR,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,5055648184,,,4
+H5,2018,2018,2018,0,0,1,Import,826,United Kingdom,GBR,842,USA,USA,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,63294165556,,,4
+H5,2018,2018,2018,0,0,2,Export,826,United Kingdom,GBR,842,USA,USA,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,65985304785,,,4
+H5,2018,2018,2018,0,0,1,Import,842,USA,USA,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,563203119540,,,4
+H5,2018,2018,2018,0,0,2,Export,842,USA,USA,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,120147865723,,,4
+H5,2018,2018,2018,0,0,3,Re-Export,842,USA,USA,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,10568252569,,,0
+H5,2018,2018,2018,0,0,1,Import,842,USA,USA,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,128345618454,,,4
+H5,2018,2018,2018,0,0,2,Export,842,USA,USA,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,57332501657,,,4
+H5,2018,2018,2018,0,0,3,Re-Export,842,USA,USA,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,8001311043,,,0
+H5,2018,2018,2018,0,0,1,Import,842,USA,USA,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,145902252542,,,4
+H5,2018,2018,2018,0,0,2,Export,842,USA,USA,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,75226085623,,,4
+H5,2018,2018,2018,0,0,3,Re-Export,842,USA,USA,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,6512655827,,,0
+H5,2018,2018,2018,0,0,1,Import,842,USA,USA,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,61748826091,,,4
+H5,2018,2018,2018,0,0,2,Export,842,USA,USA,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,66293664453,,,4
+H5,2018,2018,2018,0,0,3,Re-Export,842,USA,USA,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,9058787585,,,0
+H4,2015,2015,2015,0,0,1,Import,156,China,CHN,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,143369308743,,,0
+H4,2015,2015,2015,0,0,4,Re-Import,156,China,CHN,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,143369308743,,,0
+H4,2015,2015,2015,0,0,1,Import,156,China,CHN,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,87623361068,,,0
+H4,2015,2015,2015,0,0,2,Export,156,China,CHN,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,69154833607,,,0
+H4,2015,2015,2015,0,0,1,Import,156,China,CHN,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,142902572984,,,0
+H4,2015,2015,2015,0,0,2,Export,156,China,CHN,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,135616442813,,,0
+H4,2015,2015,2015,0,0,1,Import,156,China,CHN,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,18933743502,,,0
+H4,2015,2015,2015,0,0,2,Export,156,China,CHN,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,59567065460,,,0
+H4,2015,2015,2015,0,0,1,Import,156,China,CHN,842,USA,USA,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,148693056205,,,0
+H4,2015,2015,2015,0,0,2,Export,156,China,CHN,842,USA,USA,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,409979244393,,,0
+H4,2015,2015,2015,0,0,1,Import,276,Germany,DEU,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,103334228263,,,4
+H4,2015,2015,2015,0,0,2,Export,276,Germany,DEU,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,79426901926,,,4
+H4,2015,2015,2015,0,0,1,Import,276,Germany,DEU,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,23277036797,,,4
+H4,2015,2015,2015,0,0,2,Export,276,Germany,DEU,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,18938948276,,,4
+H4,2015,2015,2015,0,0,1,Import,276,Germany,DEU,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,41938834826,,,4
+H4,2015,2015,2015,0,0,2,Export,276,Germany,DEU,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,98358591691,,,4
+H4,2015,2015,2015,0,0,1,Import,276,Germany,DEU,842,USA,USA,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,69099301088,,,4
+H4,2015,2015,2015,0,0,2,Export,276,Germany,DEU,842,USA,USA,,,,,,,,TOTAL,All Commodities,1,No Quantity,0,,,,0,,126561005242,,,4
+H4,2015,2015,2015,0,0,1,Import,392,Japan,JPN,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,160559698699,,,0
+H4,2015,2015,2015,0,0,2,Export,392,Japan,JPN,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,109277766995,,,0
+H4,2015,2015,2015,0,0,1,Import,392,Japan,JPN,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,20281703987,,,0
+H4,2015,2015,2015,0,0,2,Export,392,Japan,JPN,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,16236970951,,,0
+H4,2015,2015,2015,0,0,1,Import,392,Japan,JPN,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,6515353401,,,0
+H4,2015,2015,2015,0,0,2,Export,392,Japan,JPN,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,10740097380,,,0
+H4,2015,2015,2015,0,0,1,Import,392,Japan,JPN,842,USA,USA,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,68347457576,,,0
+H4,2015,2015,2015,0,0,2,Export,392,Japan,JPN,842,USA,USA,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,126387232489,,,0
+H4,2015,2015,2015,0,0,1,Import,826,United Kingdom,GBR,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,62979613764,,,0
+H4,2015,2015,2015,0,0,2,Export,826,United Kingdom,GBR,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,27625408709,,,0
+H4,2015,2015,2015,0,0,1,Import,826,United Kingdom,GBR,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,94348064382,,,0
+H4,2015,2015,2015,0,0,2,Export,826,United Kingdom,GBR,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,46631518224,,,0
+H4,2015,2015,2015,0,0,1,Import,826,United Kingdom,GBR,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,10198964886,,,0
+H4,2015,2015,2015,0,0,2,Export,826,United Kingdom,GBR,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,6589815385,,,0
+H4,2015,2015,2015,0,0,1,Import,826,United Kingdom,GBR,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,7513533887,,,0
+H4,2015,2015,2015,0,0,4,Re-Import,826,United Kingdom,GBR,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,85605877,,,0
+H4,2015,2015,2015,0,0,1,Import,826,United Kingdom,GBR,842,USA,USA,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,58066453965,,,0
+H4,2015,2015,2015,0,0,2,Export,826,United Kingdom,GBR,842,USA,USA,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,69381206892,,,0
+H4,2015,2015,2015,0,0,1,Import,842,USA,USA,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,504028116963,,,0
+H4,2015,2015,2015,0,0,2,Export,842,USA,USA,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,116071708830,,,0
+H4,2015,2015,2015,0,0,3,Re-Export,842,USA,USA,156,China,CHN,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,8304432773,,,0
+H4,2015,2015,2015,0,0,1,Import,842,USA,USA,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,127170567394,,,0
+H4,2015,2015,2015,0,0,2,Export,842,USA,USA,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,49641402076,,,0
+H4,2015,2015,2015,0,0,3,Re-Export,842,USA,USA,276,Germany,DEU,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,5998025073,,,0
+H4,2015,2015,2015,0,0,1,Import,842,USA,USA,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,135023800046,,,0
+H4,2015,2015,2015,0,0,2,Export,842,USA,USA,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,62441249701,,,0
+H4,2015,2015,2015,0,0,3,Re-Export,842,USA,USA,392,Japan,JPN,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,5434063148,,,0
+H4,2015,2015,2015,0,0,1,Import,842,USA,USA,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,58887110546,,,0
+H4,2015,2015,2015,0,0,2,Export,842,USA,USA,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,56103379996,,,0
+H4,2015,2015,2015,0,0,3,Re-Export,842,USA,USA,826,United Kingdom,GBR,,,,,,,,TOTAL,All Commodities,1,No Quantity,,,,,,,7615129005,,,0
