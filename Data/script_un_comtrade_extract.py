@@ -18,7 +18,7 @@ def f_file_test():
     print("Funciton package loaded")
 
 # Function to extract data from UN comtrade
-def f_un_comtrade_data(p_r_country = ["854"],p_p_country = ["all","854"],p_freq = "A",p_ps_years = ["2010","2011"]):
+def f_un_comtrade_data(p_r_country = ["854"],p_p_country = ["all","854"],p_freq = "A",p_ps_years = ["2010","2011"],p_extra = ""):
 
     """This function works on the principle of one reporting country per URL in order to avoid the 5 country limit imposed by the API.
     You can enter any number of countries in the list, but each will run separately and be separated by the duration of the call plus 1 second pause."""
@@ -65,7 +65,7 @@ def f_un_comtrade_data(p_r_country = ["854"],p_p_country = ["all","854"],p_freq 
         time_ps = time_ps + p_ps_years[-1]
 
     #=== prepare extra reporters
-    url_extra = [partner_country,data_frequency,time_ps]
+    url_extra = [partner_country,data_frequency,time_ps,p_extra]
     url_extra_string = ""
 
     for entry in url_extra:
