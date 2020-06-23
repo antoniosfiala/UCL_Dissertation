@@ -1,15 +1,12 @@
 """
 Package documentation:
-
 A collection of functions that allows one to create adjacency matrices and plot network graphs.
-
 """
 
 #=== Importing libraries
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import networkx as nx
 
 def f_file_test():
     print("Funciton package loaded")
@@ -109,6 +106,7 @@ def f_adj_matrix(p_df,p_col,p_index,p_contiguity_flag = 1,p_col_full = None,p_in
 def f_graph(p_tuples,p_uniques = None):
 
     """This function takes in the list of tuples from f_adj_matrix() (should be at index [1]) PLUS unique countries at index [2] and generates a graph network."""
+    import networkx as nx
 
     #=== Set up network
     f_G = nx.Graph()

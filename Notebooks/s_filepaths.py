@@ -1,0 +1,5 @@
+# This script allows one to load and correct raw files before saving them again.
+path_raw      = "../Data/0_raw/"
+path_raw_dl   = path_raw+"download/"
+path_store    = "../Data/1_raw_processed_backup/"
+path_live     = "../Data/2_raw_processed_input/"
