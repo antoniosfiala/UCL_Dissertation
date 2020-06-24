@@ -54,7 +54,7 @@ def f_df_export(p_df,p_name,p_copy = True, p_loc1 = path_store, p_loc2 = path_li
     # export
     compression_type = p_compression
     temp_compress_name = temp_back_up_name+"."+compression_type
-    p_df.to_csv(temp_back_up_name+"."+compression_type,compression = compression_type)
+    p_df.to_csv(temp_back_up_name+"."+compression_type,compression = compression_type,index = False)
     print(f"Export | {temp_back_up_name} | COMPLETE")
     # copy to live folder
     if p_copy:

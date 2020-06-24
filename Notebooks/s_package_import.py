@@ -23,6 +23,7 @@ import matplotlib.pyplot as plt
 import s_file_export
 import s_filepaths
 import s_un_comtrade_extract as s_un
+import s_adj_matrix_plot
 
 #=== network analysis
 import networkx as nx
