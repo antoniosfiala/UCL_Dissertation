@@ -7,6 +7,10 @@ import time
 from datetime import datetime
 from shutil import copyfile
 
+#temp check
+#from shutil import make_archive
+#import zipfile
+
 # data analysis packages
 import pandas as pd
 pd.options.display.max_columns = None # don't truncate columns
