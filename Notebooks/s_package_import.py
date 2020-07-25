@@ -18,6 +18,8 @@ pd.options.display.max_columns = None # don't truncate columns
 
 import numpy as np
 import matplotlib.pyplot as plt
+import geopandas as gpd
+import descartes
 
 # custom scripts
 import s_file_export
