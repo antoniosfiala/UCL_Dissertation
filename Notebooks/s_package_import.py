@@ -9,7 +9,7 @@ from shutil import copyfile
 
 #temp check
 #from shutil import make_archive
-#import zipfile
+import zipfile
 
 # data analysis packages
 import pandas as pd
@@ -20,6 +20,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import geopandas as gpd
 import descartes
+import pycountry
 
 # custom scripts
 import s_file_export
