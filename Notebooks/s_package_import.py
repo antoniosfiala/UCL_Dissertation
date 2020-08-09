@@ -9,7 +9,7 @@ from shutil import copyfile
 
 #temp check
 #from shutil import make_archive
-import zipfile
+import zipfile #notebook
 
 # data analysis packages
 import pandas as pd
@@ -32,3 +32,6 @@ import s_adj_matrix_plot
 import networkx as nx
 #=== gavity modelling
 import gme as gme
+
+#=== distance datasets
+import wbdata
