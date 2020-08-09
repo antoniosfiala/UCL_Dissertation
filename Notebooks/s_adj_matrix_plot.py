@@ -103,7 +103,7 @@ def f_adj_matrix(p_df,p_col,p_index,p_contiguity_flag = 1,p_col_full = None,p_in
     return return_values
 
 #=== draw graphs
-def f_graph(p_tuples,p_group_of_countries = None,p_colour_group = "yellow", p_colour_default = "blue", p_edge_colour = "red",p_seed = None, p_weight = None):
+def f_graph(p_tuples,p_df,p_group_of_countries = None,p_colour_group = "yellow", p_colour_default = "blue", p_edge_colour = "red",p_seed = None, p_weight = None):
 
     """This function takes in the list of tuples from f_adj_matrix() (should be at index [1])
     Plus list of countries (full name, i.e. country_o or country_d columns) for colournig, else defaults to blue nodes"""
@@ -116,7 +116,7 @@ def f_graph(p_tuples,p_group_of_countries = None,p_colour_group = "yellow", p_co
     #f_G.add_nodes_from(p_uniques)
 
     #=== base for checking nodes and edges
-    def f_add_node_and_edge(p_graph,p_central_node,p_node_list,p_length = 5):
+    def f_add_node_and_edge(p_graph,p_central_node,p_node_list):
         # list of edges
         temp_edges = []
         # list of neighbours
@@ -131,7 +131,14 @@ def f_graph(p_tuples,p_group_of_countries = None,p_colour_group = "yellow", p_co
             temp_tuple = (p_central_node,country)
             temp_edges.append(temp_tuple)
 
-        p_graph.add_edges_from(temp_edges,length = p_length)
+            # try tp create edges with distance values, otherwise just pass the edge
+            try:
+                temp_length = p_df[(p_df.country_d == temp_tuple[0]) & (p_df.country_o == temp_tuple[1])].distance.values
+                temp_di = p_df[(p_df.country_d == temp_tuple[0]) & (p_df.country_o == temp_tuple[1])].institutional_distance.values
+                temp_de = p_df[(p_df.country_d == temp_tuple[0]) & (p_df.country_o == temp_tuple[1])].economic_distance.values
+                p_graph.add_edge(temp_tuple[0], temp_tuple[1], length=temp_length[0], de = temp_de[0], di = temp_di[0])
+            except:
+                p_graph.add_edge(temp_tuple[0], temp_tuple[1])
 
     #=== run function to add values
     for entry in p_tuples:
