@@ -103,7 +103,10 @@ def f_adj_matrix(p_df,p_col,p_index,p_contiguity_flag = 1,p_col_full = None,p_in
     return return_values
 
 #=== draw graphs
-def f_graph(p_tuples,p_df,p_group_of_countries = None,p_colour_group = "yellow", p_colour_default = "blue", p_edge_colour = "red",p_seed = None, p_weight = None):
+def f_graph(p_tuples,p_df,p_group_of_countries = None,p_colour_group = "yellow", p_colour_default = "blue", p_edge_colour = "red",
+            p_seed = None, p_weight = None,p_edge_traits_columns = [None],p_visualise = True, p_fig_size = (40,40),p_dpi = 150,
+            p_node_size = 500, p_node_font = 50
+            ):
 
     """This function takes in the list of tuples from f_adj_matrix() (should be at index [1])
     Plus list of countries (full name, i.e. country_o or country_d columns) for colournig, else defaults to blue nodes"""
@@ -116,7 +119,7 @@ def f_graph(p_tuples,p_df,p_group_of_countries = None,p_colour_group = "yellow",
     #f_G.add_nodes_from(p_uniques)
 
     #=== base for checking nodes and edges
-    def f_add_node_and_edge(p_graph,p_central_node,p_node_list):
+    def f_add_node_and_edge(p_graph,p_central_node,p_node_list,p_edges_chars):
         # list of edges
         temp_edges = []
         # list of neighbours
@@ -133,16 +136,19 @@ def f_graph(p_tuples,p_df,p_group_of_countries = None,p_colour_group = "yellow",
 
             # try tp create edges with distance values, otherwise just pass the edge
             try:
-                temp_length = p_df[(p_df.country_d == temp_tuple[0]) & (p_df.country_o == temp_tuple[1])].distance.values
-                temp_di = p_df[(p_df.country_d == temp_tuple[0]) & (p_df.country_o == temp_tuple[1])].institutional_distance.values
-                temp_de = p_df[(p_df.country_d == temp_tuple[0]) & (p_df.country_o == temp_tuple[1])].economic_distance.values
-                p_graph.add_edge(temp_tuple[0], temp_tuple[1], length=temp_length[0], de = temp_de[0], di = temp_di[0])
+                temp_0 = p_df[(p_df.country_d == temp_tuple[0]) & (p_df.country_o == temp_tuple[1])].loc[:,p_edges_chars[0]].values
+                temp_1 = p_df[(p_df.country_d == temp_tuple[0]) & (p_df.country_o == temp_tuple[1])].loc[:,p_edges_chars[1]].values
+                temp_2 = p_df[(p_df.country_d == temp_tuple[0]) & (p_df.country_o == temp_tuple[1])].loc[:,p_edges_chars[2]].values
+                temp_3 = p_df[(p_df.country_d == temp_tuple[0]) & (p_df.country_o == temp_tuple[1])].loc[:,p_edges_chars[3]].values
+                temp_4 = p_df[(p_df.country_d == temp_tuple[0]) & (p_df.country_o == temp_tuple[1])].loc[:,p_edges_chars[4]].values
+                p_graph.add_edge(temp_tuple[0], temp_tuple[1], dw =temp_0[0], di = temp_1[0], de = temp_2[0],di_min_max = temp_3[0],de_min_max = temp_4[0])
             except:
+                #print("Distance weights were not assigned")
                 p_graph.add_edge(temp_tuple[0], temp_tuple[1])
 
     #=== run function to add values
     for entry in p_tuples:
-        f_add_node_and_edge(f_G,entry[0],entry[1])
+        f_add_node_and_edge(f_G,entry[0],entry[1],p_edge_traits_columns)
 
     #=== node colouring | compare list of countries to be treated differently to list of nodes
     colour_list = []
@@ -163,9 +169,12 @@ def f_graph(p_tuples,p_df,p_group_of_countries = None,p_colour_group = "yellow",
 
     #=== visualise graph
     #pos = nx.spring_layout(Test_G, weight='length')
-    plt.figure(1,figsize = (40,40),dpi = 150)
-    nx.draw_spring(f_G, with_labels = True, font_weight = "light",node_color = colour_list,edge_color = p_edge_colour,node_size=100,font_size=20, seed = p_seed, weight = p_weight)
-    plt.show()
+    if p_visualise:
+        plt.figure(1,figsize = p_fig_size,dpi = p_dpi)
+        nx.draw_spring(f_G, with_labels = True, font_weight = "light",node_color = colour_list,edge_color = p_edge_colour,node_size=p_node_size,font_size=p_node_font, seed = p_seed, weight = p_weight)
+        plt.show()
+    else:
+        print(f"Message: visualisations turned off.")
 
     return f_G
 

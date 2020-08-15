@@ -52,13 +52,20 @@ def f_df_export(p_df,p_name,p_copy = True,p_file_id = "", p_loc1 = path_store, p
     temp_back_up_name = f"{p_loc1}{p_file_id}{p_loc1_pre}{p_name}_{time_of_export}.csv"
 
     # export
-    compression_type = p_compression
-    temp_compress_name = temp_back_up_name+"."+compression_type
-    p_df.to_csv(temp_back_up_name+"."+compression_type,compression = compression_type,index = False)
+    # compression exemption
+    if p_compression is None:
+        compression_type = ""
+        print("No compression")
+    else:
+        compression_type =f".{p_compression}"
+
+    temp_compress_name = temp_back_up_name+compression_type
+    p_df.to_csv(temp_back_up_name+compression_type,compression = p_compression,index = False)
     print(f"Export | {temp_back_up_name} | COMPLETE")
     # copy to live folder
+
     if p_copy:
-        temp_live_name = f"{p_loc2}{p_file_id}{p_loc2_pre}{p_name}.csv.{compression_type}"
+        temp_live_name = f"{p_loc2}{p_file_id}{p_loc2_pre}{p_name}.csv{compression_type}"
         copyfile(temp_compress_name,temp_live_name)
         print(f"COPY   | {temp_live_name} | COMPLETE")
     else:

@@ -21,6 +21,7 @@ import matplotlib.pyplot as plt
 import geopandas as gpd
 import descartes
 import pycountry
+from sklearn import preprocessing
 
 # custom scripts
 import s_file_export
