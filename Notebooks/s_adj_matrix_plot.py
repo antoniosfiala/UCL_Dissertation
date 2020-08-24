@@ -105,7 +105,7 @@ def f_adj_matrix(p_df,p_col,p_index,p_contiguity_flag = 1,p_col_full = None,p_in
 #=== draw graphs
 def f_graph(p_tuples,p_df,p_group_of_countries = None,p_colour_group = "yellow", p_colour_default = "blue", p_edge_colour = "red",
             p_seed = None, p_weight = None,p_edge_traits_columns = [None],p_visualise = True, p_fig_size = (40,40),p_dpi = 150,
-            p_node_size = 500, p_node_font = 50
+            p_node_size = 500, p_node_font = 50, p_positions = ""
             ):
 
     """This function takes in the list of tuples from f_adj_matrix() (should be at index [1])
@@ -140,8 +140,8 @@ def f_graph(p_tuples,p_df,p_group_of_countries = None,p_colour_group = "yellow",
                 temp_1 = p_df[(p_df.country_d == temp_tuple[0]) & (p_df.country_o == temp_tuple[1])].loc[:,p_edges_chars[1]].values
                 temp_2 = p_df[(p_df.country_d == temp_tuple[0]) & (p_df.country_o == temp_tuple[1])].loc[:,p_edges_chars[2]].values
                 temp_3 = p_df[(p_df.country_d == temp_tuple[0]) & (p_df.country_o == temp_tuple[1])].loc[:,p_edges_chars[3]].values
-                temp_4 = p_df[(p_df.country_d == temp_tuple[0]) & (p_df.country_o == temp_tuple[1])].loc[:,p_edges_chars[4]].values
-                p_graph.add_edge(temp_tuple[0], temp_tuple[1], dw =temp_0[0], di = temp_1[0], de = temp_2[0],di_min_max = temp_3[0],de_min_max = temp_4[0])
+                #temp_4 = p_df[(p_df.country_d == temp_tuple[0]) & (p_df.country_o == temp_tuple[1])].loc[:,p_edges_chars[4]].values
+                p_graph.add_edge(temp_tuple[0], temp_tuple[1], dgw =temp_0[0], dgl = temp_1[0], di = temp_2[0],de = temp_3[0])
             except:
                 #print("Distance weights were not assigned")
                 p_graph.add_edge(temp_tuple[0], temp_tuple[1])
@@ -171,7 +171,9 @@ def f_graph(p_tuples,p_df,p_group_of_countries = None,p_colour_group = "yellow",
     #pos = nx.spring_layout(Test_G, weight='length')
     if p_visualise:
         plt.figure(1,figsize = p_fig_size,dpi = p_dpi)
-        nx.draw_spring(f_G, with_labels = True, font_weight = "light",node_color = colour_list,edge_color = p_edge_colour,node_size=p_node_size,font_size=p_node_font, seed = p_seed, weight = p_weight)
+        #nx.draw_spring()
+        nx.draw(f_G, with_labels = True, font_weight = "light",node_color = colour_list,edge_color = p_edge_colour,
+            node_size=p_node_size,font_size=p_node_font, seed = p_seed, weight = p_weight, pos = p_positions)
         plt.show()
     else:
         print(f"Message: visualisations turned off.")
