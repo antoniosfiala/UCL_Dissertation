@@ -1,8 +1,5 @@
-# UCL_Dissertation
-Yidai Yilu project.
-
-**Towards a systems-based understanding of international trade
-The role of infrastructure and distance in the case of the Belt and Road Initiative**
+# Towards a systems-based understanding of international trade
+**The role of infrastructure and distance in the case of the Belt and Road Initiative**
 _This dissertation is submitted in part requirement for the MSc Spatial Data Science and Visualisation in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Build Environment, UCL._
 
 
